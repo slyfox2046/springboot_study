@@ -1,12 +1,12 @@
-package com.sly.springbboot;
+package com.sly.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbBoot04WebRestfulcrudApplication {
+public class SpringBoot04WebRestfulcrudApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbBoot04WebRestfulcrudApplication.class, args);
+        SpringApplication.run(SpringBoot04WebRestfulcrudApplication.class, args);
     }
 }

@@ -1,4 +1,4 @@
-package com.sly.springbboot;
+package com.sly.springboot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringbBoot04WebRestfulcrudApplicationTests {
+public class SpringBoot04WebRestfulcrudApplicationTests {
 
     @Test
     public void contextLoads() {
