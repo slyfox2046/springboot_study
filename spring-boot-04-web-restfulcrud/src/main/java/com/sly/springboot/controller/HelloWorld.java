@@ -8,10 +8,10 @@ import java.util.HashMap;
 @Controller
 public class HelloWorld {
 
-    @GetMapping({"/","/index.html"})
-    public String index(){
-        return "index";
-    }
+//    @GetMapping({"/","/index.html"})
+//    public String index(){
+//        return "index";
+//    }
 
     @GetMapping("/hello")
     public String hello(@RequestParam(required = false) String a){

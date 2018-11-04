@@ -26,7 +26,7 @@
 
 
 
-### 视频链接：https://www.bilibili.com/video/av23478787/?p=33
+### 33.视频链接：https://www.bilibili.com/video/av23478787/?p=33
 
 **注意事项：**
 
@@ -38,6 +38,63 @@ public class MyMvcConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
 //        super.addViewControllers(registry);
         registry.addViewController("abc").setViewName("success");
+    }
+```
+
+
+
+
+
+### 35.视频链接：https://www.bilibili.com/video/av23478787/?p=35
+
+**注意事项：**配置application.properties文件
+
+```xml
+spring.messages.basename=i18n.login
+```
+
+新建一个配置类
+```java
+package com.sly.springboot.Config;
+
+import org.springframework.util.StringUtils;
+import org.springframework.web.servlet.LocaleResolver;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Locale;
+
+/**
+ * 可以在连接上携带区域信息
+ *
+ * */
+public class MyLocalResolver implements LocaleResolver {
+
+    @Override
+    public Locale resolveLocale(HttpServletRequest request) {
+        String l = request.getParameter("l");
+        Locale locale = null;
+        if (!StringUtils.isEmpty(l)){
+            String[] split = l.split("_");
+            locale = new Locale(split[0],split[1]);
+        }
+        return locale;
+    }
+
+    @Override
+    public void setLocale(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Locale locale) {
+
+    }
+}
+
+```
+
+在MvcConfig中使用自己写的LocaleResolver（带参数则使用参数中的，不带则使用系统的）
+
+```java
+    @Bean
+    public LocaleResolver localeResolver(){
+        return new MyLocalResolver();
     }
 ```
 
