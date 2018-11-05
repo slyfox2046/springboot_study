@@ -104,9 +104,32 @@ public class MyLocalResolver implements LocaleResolver {
 
 
 
+### 109.视频链接：https://www.bilibili.com/video/av23478787/?p=35
+
+**Title**：尚硅谷-SpringBoot高级-热部署-devtools开发热部署
+
+1. [参考官方文档](https://docs.spring.io/spring-boot/docs/2.0.6.RELEASE/reference/htmlsingle/) 导入devtools依赖
+
+   ![devtools](statics/QQ截图20181105163141.png)
+
+   ```xml
+   <dependency>
+   	<groupId>org.springframework.boot</groupId>
+   	<artifactId>spring-boot-devtools</artifactId>
+   	<optional>true</optional>
+   </dependency>
+   
+   ```
+
+2. IntelliJ IDEA 设置  File ——> Settings ——> Complier ——> 选中 Build project automatically 
+
+   ![](D:\workspace\java\springboot_study\statics\20180531074827223.png)
 
 
 
+3.使用该组合键 Shift+ALT+Ctrl+/ ，选择 Registry 
 
+勾选 “complier.automake.allow.when.app.running” 选项
 
+![](D:\workspace\java\springboot_study\statics\20180531075540634.png)
 
