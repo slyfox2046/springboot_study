@@ -123,7 +123,7 @@ public class MyLocalResolver implements LocaleResolver {
 
 2. IntelliJ IDEA 设置  File ——> Settings ——> Complier ——> 选中 Build project automatically 
 
-   ![](D:\workspace\java\springboot_study\statics\20180531074827223.png)
+   ![](statics/20180531074827223.png)
 
 
 
@@ -131,5 +131,7 @@ public class MyLocalResolver implements LocaleResolver {
 
 勾选 “complier.automake.allow.when.app.running” 选项
 
-![](D:\workspace\java\springboot_study\statics\20180531075540634.png)
+![](statics/20180531075540634.png)
+
+
 
